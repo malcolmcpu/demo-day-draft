@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/public/stylesheet.css" />
+    <title>Survey</title>
+  </head>
+  <body>
+    <div class="survey">
+      <h1>Your Skin &amp; Lifestyle Survey</h1>
+      <p>Answer a few questions and we'll build a care routine for you.</p>
+
+      <form action="/survey" method="post">
+        <h2>Diet</h2>
+        <label for="diet-type">Which best describes your diet?</label>
+        <select id="diet-type" name="diet-type" required>
+          <option value="">Select one</option>
+          <option value="balanced">Balanced</option>
+          <option value="vegetarian">Vegetarian</option>
+          <option value="vegan">Vegan</option>
+          <option value="high_protein">High protein / low carb</option>
+          <option value="processed">Mostly processed / fast food</option>
+        </select>
+
+        <br />
+        <label for="sugar-intake"
+          >How often do you eat sugary or fried foods?</label
+        >
+        <select id="sugar-intake" name="sugar-intake" required>
+          <option value="">Select one</option>
+          <option value="rarely">Rarely</option>
+          <option value="weekly">A few times a week</option>
+          <option value="daily">Daily</option>
+        </select>
+        <br />
+        <h2>Sleep</h2>
+        <label for="sleep-hours">Average hours of sleep per night</label>
+        <input
+          type="number"
+          id="sleep_hours"
+          name="sleep_hours"
+          min="0"
+          max="24"
+          step="0.5"
+          required
+        />
+        <br />
+        <label for="sleep-schedule">Do you keep a consistent bedtime?</label>
+        <select id="sleep-schedule" name="sleep-schedule" required>
+          <option value="">Select one</option>
+          <option value="yes">Yes</option>
+          <option value="sometimes">Sometimes</option>
+          <option value="no">No</option>
+        </select>
+
+        <br />
+
+        <label for="screen-time"
+          >Do you use screens in the hour before bed?</label
+        >
+        <select id="screen-time" name="screen-time" required>
+          <option value="">Select one</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+
+        <br />
+
+        <h2>Skincare</h2>
+        <label for="wash-schedlue">How often do you wash your face?</label>
+        <select id="wash-schedlue" name="wash-schedlue" required>
+          <option value="">Select one</option>
+          <option value="rarely">Rarely</option>
+          <option value="once">Once a day</option>
+          <option value="twice">Twice a day</option>
+          <option value="more">More than twice a day</option>
+        </select>
+
+        <br />
+
+        <label for="sunscreen">Do you wear sunscreen daily?</label>
+        <select id="sunscreen" name="sunscreen" required>
+          <option value="">Select one</option>
+          <option value="yes">Yes</option>
+          <option value="sometimes">Sometimes</option>
+          <option value="no">No</option>
+        </select>
+
+        <br />
+
+        <h2>Lifestyle</h2>
+        <label for="smoke">Do you smoke?</label>
+        <select id="smoke" name="smoke" required>
+          <option value="">Select one</option>
+          <option value="no">No</option>
+          <option value="occasionally">Occasionally</option>
+          <option value="regularly">Regularly</option>
+        </select>
+
+        <br />
+
+        <label for="drinks">Alcoholic drinks per week</label>
+        <input
+          type="number"
+          id="drinks"
+          name="drinks_per_week"
+          min="0"
+          max="100"
+          required
+        />
+
+        <br />
+
+        <label for="water">Glasses of water per day</label>
+        <input
+          type="number"
+          id="water"
+          name="water_glasses"
+          min="0"
+          max="30"
+          required
+        />
+
+        <button type="submit">Submit Survey</button>
+      </form>
+    </div>
+  </body>
+</html>

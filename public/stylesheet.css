@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f5;
+  color: #222;
+  margin: 0;
+  padding: 40px 20px;
+}
+
+.signup-card,
+.login-card,
+.survey {
+  background: #fff;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  text-align: center;
+}
+
+button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 15px;
+  background: #2f7d5b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+}
